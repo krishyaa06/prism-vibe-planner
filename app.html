@@ -1,0 +1,25 @@
+    <section class="grid g2 planner">
+      <div class="card form">
+        <div class="card-title"><h2>Your idea</h2><button class="btn small" id="example">Example</button></div>
+        <label class="field"><span>Name</span><input id="name" /></label>
+        <label class="field"><span>One-line pitch</span><input id="pitch" /></label>
+        <label class="field"><span>Problem</span><textarea id="problem" rows="2"></textarea></label>
+        <label class="field"><span>Who is it for?</span><input id="users" /></label>
+        <label class="field"><span>Features (one per line, most important first)</span><textarea id="features" rows="6"></textarea></label>
+        <div class="grid g2">
+          <label class="field"><span>Platform</span><select id="platform"><option value="web">Web app</option><option value="mobile">Mobile app</option><option value="cli">CLI</option><option value="bot">Discord bot</option><option value="api">API</option></select></label>
+          <label class="field"><span>Stack</span><input id="stack" /></label>
+          <label class="field"><span>Database</span><input id="db" placeholder="Supabase, SQLite…" /></label>
+          <label class="field"><span>Success metric</span><input id="metric" /></label>
+        </div>
+        <label class="check"><input type="checkbox" id="auth" /> Needs user accounts</label>
+      </div>
+      <div class="card out-card">
+        <div class="card-title"><h2>Plan</h2><div class="row"><span class="pill" id="hrs"></span><button class="btn small primary" id="copy">Copy</button><button class="btn small" id="dl">Download</button></div></div>
+        <div class="tabs" id="view"><button class="on" data-v="prd">PRD</button><button data-v="tasks">Tasks</button><button data-v="prompt">Agent prompt</button><button data-v="gh">GitHub issues</button></div>
+        <div id="prd" class="md pane"></div>
+        <div id="tasks" class="pane" hidden></div>
+        <pre id="prompt" class="out pane" hidden></pre>
+        <div id="gh" class="pane" hidden><label class="field"><span>Repo</span><input id="repo" value="krishyaa06/my-app" /></label><pre class="out" id="ghout"></pre></div>
+      </div>
+    </section>

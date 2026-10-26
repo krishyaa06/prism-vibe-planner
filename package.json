@@ -1,0 +1,30 @@
+{
+  "name": "prism-vibe-planner",
+  "version": "1.0.0",
+  "description": "Turn an app idea into a PRD, phased task checklist, AI-agent prompt and GitHub issue script — offline.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "product-management",
+    "prd",
+    "planning",
+    "mvp",
+    "ai-agents",
+    "cursor",
+    "github-issues",
+    "vibe-coding",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-vibe-planner.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-vibe-planner/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}
